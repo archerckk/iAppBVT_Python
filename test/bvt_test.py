@@ -44,7 +44,7 @@ class IAppBVT(unittest.TestCase):
             try:
                 elem = self.driver.find_element_by_xpath(elem_xpath)
             except Exception:
-                print('by pass the element not found')
+                print('by pass the element not found!!!')
 
         if elem is None and raise_exception:
             raise LookupError(f'The element which xpath is {elem_xpath} could not be found')
